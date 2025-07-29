@@ -1,63 +1,107 @@
+# REMPTURE
 
-# Endless Runner in Godot 4.2
+![Rempture](https://github.com/brenomchd/REMPTURE/blob/main/Rempture.png)
 
-This game was developed as a project for the missing-semester lecture at JKU Linz. The goal was to get familiar with the Godot game engine and create a small project showcasing what it can do. Additionally for learning purposes, also an automatic deployment pipeline was used to build and deploy a web version of the game to Github Pages.
+**Rempture** is a 2D psychological horror platformer auto-runner, where light and shadow are not just visual effects—they are your only hope for survival. You control a boy trapped in a recurring nightmare, trying to escape a haunted mansion before the darkness—and a terrifying entity known as the **Stalker** catches you.
 
+> 👉 Play the game on itch.io: [https://brenomchd.itch.io/rempture](https://brenomchd.itch.io/rempture)
 
-## Authors
+---
 
-- [@rasalagean](https://github.com/rasalagean) - K12116140
+## 🕹️ Gameplay
 
+- **Style**: 2D Platformer, Auto-runner
+- **Core Mechanic**: Your candle is your only protection. When it goes out, you become vulnerable.
+- **Atmosphere**: Minimalist and oppressive, with sound design and visuals that reinforce the psychological horror.
 
-## Screenshots
-![image](https://github.com/rasalagean/endless-runner/assets/151786698/a228159f-4884-4c39-a160-073050a30e8f)
+---
 
-![image](https://github.com/rasalagean/endless-runner/assets/151786698/c252bab5-7e56-4a52-aa2d-d2a7230ca325)
+## 🎮 How to Play
 
-![image](https://github.com/rasalagean/endless-runner/assets/151786698/600cdf9a-42c9-4deb-9233-83dddad7dd36)
+- The character runs automatically.
+- Use the **arrow keys** to interact and jump (specifics within the game).
+- **Manage the light**: Keep your candle burning to stay safe from the darkness and the Stalker.
+- Objective: **Survive as long as possible** and escape the nightmare.
 
-## Run Locally
+---
 
-Clone the project
+## 📂 Project Structure
 
-```bash
-  git clone https://github.com/rasalagean/endless-runner.git
+This repository contains the source code of Rempture, developed using [Godot Engine 3.x](https://godotengine.org/).
+
+```
+REMPTURE/
+├── Assets/                  # Visual and sound resources
+├── Characters/              # Character logic and animations
+├── Game/                    # Main game scenes and mechanics
+├── GUI/                     # User interface
+├── Levels/                  # Mansion level layout
+├── Light/                   # Candle and lighting system
+├── Music/                   # Soundtrack files
+├── Scripts/                 # Organized GDScript code
+├── Scenes/                  # Scene definitions
+├── main.tscn                # Main game scene
+├── project.godot            # Godot project file
+└── README.md                # This file
 ```
 
-Make sure you have Godot 4.2 installed and import this project within the engine. After that, pressing F5 will launch the game.
+---
 
-This repository also includes exports of the game for Windows, Linux and Web. You can find them in the ./exports folder. There are executables which will run the game directly without having the need to install the Godot engine.
+## 👥 Development Team
 
-In order to make it easier to test the project the Web export is also automatically deployed to github pages.
+- **Breno Machado** — Programming, Game Design  
+- **Tiago Lobo** — Programming, Game Design  
+- **Giordanna Santos** — Game Design, Art Direction  
+- **Alexandre Domingos** — Original Soundtrack  
+- **Ana Freitas** — Art and Animation  
+- **Ricardo Albernaz** — Visual Consultant
 
-**Please follow the following steps exactly as described, in order to run the game properly on the web:**
+---
 
-1. Open a new browser window.
-2. Go to https://rasalagean.github.io/endless-runner/
-3. Wait till the game loads and start playing :)
+## 🛠️ Requirements
 
-If the game works fine, nothing else to do. However if it looks broken please follow these steps:
+You can run the game directly via Godot or export it to your platform of choice.
 
-1. Open a new browser window.
-2. Open the web developer tools and resize the browser window to be 1152px x 648px. (Opening the web developer tools should display the window size while resizing)
-3. Go to https://rasalagean.github.io/endless-runner/
-3. Wait till the game loads and start playing :)
+### 🔧 Requirements
 
-*Following these steps may be necessary as the configured Godot project window size is 1152px x 648px. A different window size may break the game. For the Linux and Windows runnables this is not necessary as they have a fixed window size anyways.*
-## Deployment
+- [Godot Engine 3.5+](https://godotengine.org/download/)
+- OS: Windows, Linux, or macOS
+- (Optional) Export templates installed
 
-There is a Github Action linked to this repository. Whenever a commit is pushed to the main branch, the process starts.
-To sum it up, the Github Action downloads a Godot 4.2 instance, checks out the code on the main branch and builds a Web export to the "gh-pages" branch.
-A second Github Action is then triggered when something is pushed to the "gh-pages" branch. This second action, is a basic static html file deployment to https://github.com/rasalagean/endless-runner  
+### ▶️ Run Locally
 
+```bash
+# Clone the repository
+git clone https://github.com/brenomchd/REMPTURE.git
 
-## License
+# Open the project in Godot using 'project.godot'
+```
 
-[MIT](https://choosealicense.com/licenses/mit/)
+---
 
-## Resources
+## 📦 Build / Export
 
-[background-assets](https://ansimuz.itch.io/parallax-forest) \
-[character-assets](https://arks.itch.io/dino-characters) \
-[music-assets](https://www.filippovicarelli.com/8bit-game-background-music) \
-[sound-assets](https://sfxr.me/)
+To export the game:
+
+1. Open the project in Godot.
+2. Go to **Project > Export**.
+3. Configure the target platforms (Windows, Linux, HTML5, etc).
+4. Click **Export Project**.
+
+---
+
+## 📥 Download
+
+If you prefer not to build it yourself, download a compiled version:
+
+👉 **[https://brenomchd.itch.io/rempture](https://brenomchd.itch.io/rempture)**
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. Please refer to the [`LICENSE`](LICENSE) file (if added) for more details.
+
+---
+
+*Rempture is a short but intense experience—ideal for players who enjoy games that explore psychological fear through simple yet challenging mechanics.*
